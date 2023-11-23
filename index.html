@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te amo</title>
+    <link rel="shortcut icon" href="https://logopng.com.br/logos/coracao-72.svg" type="image/x-icon">
+
+    <style>
+        body {
+            background: linear-gradient(pink, rgb(170, 0, 255));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            background-color: black;
+            font: 300 2.5rem 'Poppins', sans-serif;
+            padding: 15px 30px;
+            border-radius: 15px;
+            color: white;
+            transition: ease-in-out 0.4s;
+            cursor: pointer;
+            width: 200px;
+            border: 1px solid black;
+            
+        }
+
+        .titulo-principal {
+            font: 700 3rem 'Poppins', sans-serif;
+        }
+
+        .titulo {
+            text-align: center;
+            padding-bottom: 4rem;
+            padding-top: 2rem;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 200px;
+        }
+
+        
+    </style>
+    <script>
+        function sim() {
+            location.href = "https://youtube.com/shorts/fkkCZC66wII?feature=share";
+        }
+
+        function desvia(btn) {
+            btn.style.position = 'absolute';
+            btn.style.bottom = geraPosicao(10, 80);
+            btn.style.left = geraPosicao(10, 80);
+            // console.log('opa, desviei...');
+        }
+
+        function geraPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+
+       
+
+    </script>
+
+</html>
+
+</script>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="titulo-principal">QUER FICAR COMIGO PARA SEMPRE?</h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <button class="btn" onclick="sim()">SIM</button>
+        </div>
+
+        <div class="botaoN">
+            <button class="btn " onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
